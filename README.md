@@ -15,6 +15,7 @@
   <h2>🔍 Overview</h2>
   <p>This project is a Flask web server that uses AI or fuzzy logic to understand user queries and redirect them to the correct web page route. It can use either a lightweight offline matching algorithm or a powerful AI model via OpenRouter API.</p>
 
+  Demo :-https://youtu.be/M2boiq-6EbQ
   <h2>✨ Features</h2>
   <ul>
     <li>AI-powered query redirection</li>
