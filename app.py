@@ -33,7 +33,9 @@ def contact():
 @app.route('/about')
 def about():
     return 'This is the about page'
+
 @app.route('/not_found')
+def page_not_found():
     return 'Opps! we Page not found!'
 
 @app.route('/')
