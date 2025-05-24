@@ -40,7 +40,7 @@
 
   <h2>🚀 Getting Started</h2>
   <h3>1. Clone the Repository</h3>
-  <pre><code>git clone https://github.com/yourusername/ai-redirector.git
+  <pre><code>git clone https://github.com/dhanuvagman006/FlaskAI.git
 cd ai-redirector</code></pre>
 
   <h3>2. Install Dependencies</h3>
