@@ -69,7 +69,7 @@ path_to_redirect = airedirect.ask_ai(query, api_key, model, urls_disc)</code></p
   <p>MIT License</p>
 
   <h2>📬 Contact</h2>
-  <p>For questions or collaboration, feel free to reach out at <strong>youremail@example.com</strong>.</p>
+  <p>For questions or collaboration, feel free to reach out at <strong>dhanushinsit@gmail.com</strong>.</p>
 
 </body>
 </html>
