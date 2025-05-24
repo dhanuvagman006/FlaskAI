@@ -50,7 +50,7 @@ cd ai-redirector</code></pre>
   <pre><code>python app.py</code></pre>
 
   <h3>4. Access the App</h3>
-  <p>Visit <a href="http://localhost:5000/query">http://localhost:5000/&lt;your-query&gt;</a> in your browser. For example: <code>http://localhost:5000/contact</code></p>
+  <p>Visit <a href="http://localhost:5000/query">http://localhost:5000/&lt;your-query&gt;</a> in your browser. For example: <code>http://localhost:5000/where can i find contact page</code></p>
 
   <h2>💡 Example Queries</h2>
   <ul>
