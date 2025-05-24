@@ -1,8 +1,7 @@
 from flask import *
 import airedirect
 app = Flask(__name__)
-
-api_key='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'
+api_key='<add your api key here>'
 model="google/gemini-2.0-flash-001"
 
 
