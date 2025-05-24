@@ -1,10 +1,27 @@
-urls_disc={
-    "home":"This is the home page",
-    "about":"This is the about page",
-    "contact":"This is the contact page",
-    "services":"This is the services page",
-    "products":"This is the products page",
-    "blog":"This is the blog page",
-    "contact":"This is the contact page",
-}
+import requests
+import json
 
+
+
+    
+def ask_ai(query,api_key,model,urls_disc):
+    response = requests.post(
+    url="https://openrouter.ai/api/v1/chat/completions",
+    headers={
+    "Authorization": f"Bearer {api_key}",
+    "Content-Type": "application/json",
+    "HTTP-Referer": "nexusclubs.in", # Optional. Site URL for rankings on openrouter.ai.
+    "X-Title": "Nexus Clubs", # Optional. Site title for rankings on openrouter.ai.
+  },
+  data=json.dumps({
+    "model": model,
+    "messages": [
+      {
+        "role": "user",
+        "content": query+f"The following is the description of the pages and just return the page name: {urls_disc}"
+      }
+    ],
+    
+  })
+)
+    return response.json()['choices'][0]['message']['content']
