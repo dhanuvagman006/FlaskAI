@@ -13,15 +13,19 @@ urls_disc={
     "products":"This is the products page",
     "blog":"This is the blog page",
     "contact":"contains ceo's contact information",
-    'create_account':'contains information about creating an account and resetting password'
+    'create_account':'contains information about creating an account and resetting password',
+    "not_found":"if no pages found"
 }
 
 
 @app.route('/<query>')
 def index(query):
-    path=airedirect.ask_ai(query,api_key,model,urls_disc)
-    return redirect(path)
-#Exampel
+    path_to_redirect = airedirect.ask_ai(query, api_key, model, urls_disc)
+    path_to_redirect = path_to_redirect.strip().replace('\n', '')
+    print(path_to_redirect)
+    return redirect(path_to_redirect)
+
+#Example
 @app.route('/contact')
 def contact():
     return 'This is the contact page'

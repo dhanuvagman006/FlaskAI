@@ -1,8 +1,6 @@
 import requests
 import json
 
-
-
     
 def ask_ai(query,api_key,model,urls_disc):
     response = requests.post(
@@ -25,3 +23,19 @@ def ask_ai(query,api_key,model,urls_disc):
   })
 )
     return response.json()['choices'][0]['message']['content']
+
+
+def ask_py(query, urls_disc):
+    descriptions = list(urls_disc.values())
+    match = difflib.get_close_matches(query, descriptions, n=1, cutoff=0.3)
+    
+    if match:
+        for key, desc in urls_disc.items():
+            if desc == match[0]:
+                return key
+    return "not_found"
+
+# Example usage
+query = "how to reset my password"
+result = ask_py(query, urls_disc)
+print(result)
